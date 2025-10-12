@@ -1,0 +1,269 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, a, li {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+header .header__top {
+  padding-top: 18px;
+  background-color: rgba(250, 235, 215, 0.9);
+  padding-bottom: 18px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+header .header__top .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header__top .menu ul {
+  display: flex;
+}
+header .header__top .menu ul li {
+  margin-right: 26px;
+}
+header .header__top .menu ul li a {
+  color: black;
+  font-size: 24px;
+  opacity: 0.8;
+  padding: 8px;
+}
+header .header__top .menu ul li a:hover {
+  transition: 0.3s;
+  opacity: 1;
+  border: 1px solid black;
+  border-radius: 26px;
+}
+header .header__top .menu ul li:last-child {
+  margin-right: 0;
+}
+header .header__bottom {
+  background-image: url(img/video/Светлогорск-Гомельская-область-_online-video-cutter.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 220px;
+  padding-bottom: 336px;
+  margin-bottom: 24px;
+}
+header .header__bottom .header .head_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header__bottom .header .head_text .logo {
+  display: flex;
+  align-items: center;
+}
+header .header__bottom .header .head_text .logo h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 72px;
+  color: rgba(255, 255, 255, 0.75);
+}
+header .header__bottom .header .head_text .logo h1 span {
+  color: rgba(0, 136, 255, 0.8);
+}
+header .header__bottom .header .head_text p {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+}
+
+.information h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.information p {
+  font-size: 20px;
+}
+.information .hist {
+  margin-bottom: 30px;
+}
+.information .put {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information .put .put_text p {
+  max-width: 660px;
+}
+.information .put .map_s {
+  border-radius: 28px;
+  border: none;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+footer .footer {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+footer .footer .footer__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 115px;
+}
+footer .footer .footer__info a h2 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  color: rgba(0, 136, 255, 0.8);
+}
+footer .footer .footer__info a h2 span {
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .footer .footer__info p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .footer .footer__contacts {
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .footer__contacts h2 {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+}
+footer .footer .footer__contacts a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+footer .footer .footer__contacts p {
+  color: rgba(255, 255, 255, 0.75);
+}
+footer .footer .footer__contacts .tel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+footer .footer .footer__contacts .tel img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+footer .footer .footer__contacts .adr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+footer .footer .footer__contacts .adr img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+footer .footer .footer__contacts .mail {
+  display: flex;
+  align-items: center;
+}
+footer .footer .footer__contacts .mail img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+footer .footer .footer__social h2 {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+}
+footer .footer .footer__social ul {
+  display: flex;
+}
+footer .footer .footer__social ul li {
+  margin-right: 20px;
+}
+footer .footer .footer__social ul li a img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer .footer__social ul li:last-child {
+  margin-right: 0;
+}
+
+.header__bot {
+  padding: 32px 0 32px 0;
+}
+
+.otdel__info .cards {
+  margin-top: 32px;
+}
+.otdel__info .cards .card {
+  margin-bottom: 22px;
+}
+.otdel__info .cards .card h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.otdel__info .cards .card h3 {
+  font-size: 28px;
+}
+.otdel__info .cards .card p {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+.otdel__info .cards .card h3 {
+  margin-bottom: 10px;
+}
+.otdel__info .cards .card ul li {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.otdel__info .cards .card ul li:last-child {
+  margin-bottom: 14px;
+}
+.otdel__info .cards .card .card__info {
+  display: flex;
+  justify-content: space-between;
+}
+.otdel__info .cards .card .card__info .card__photo img {
+  width: 620px;
+  height: 460px;
+  border-radius: 28px;
+}
+.otdel__info .cards .card .card__info .card__map .cr__map {
+  border-radius: 28px;
+}/*# sourceMappingURL=style.css.map */
