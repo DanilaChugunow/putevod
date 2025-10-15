@@ -15,6 +15,25 @@
     <title>Храмы и костёлы</title>
 </head>
 <body>
+    <!-- Burger Menu -->
+    <div class="burger-menu" id="burgerMenu">
+        <span class="burger-icon" id="burgerIcon">&#9776;</span>
+        <nav class="burger-nav" id="burgerNav">
+            <span class="close-burger" id="closeBurger">&times;</span>
+            <ul>
+                <li><a href="#kostel">Костёл Вознесения Святого Креста</a></li>
+                <li><a href="#preobrazhenie">Храм Преображения Господня</a></li>
+                <li><a href="#kiril">Храм во имя Кирилла Туровского</a></li>
+                <li><a href="#blagodat">Церковь «Благодать»</a></li>
+                <li><a href="#nikolay">Храм Святого Николая Чудотворца</a></li>
+                <li><a href="#dionisiy">Часовня Дионисия Полоцкого</a></li>
+                <li><a href="#apostol">Церковь Двенадцати апостолов</a></li>
+                <li><a href="#newapostol">Новоапостольская церковь</a></li>
+                <li><a href="#petropavel">Церковь Петра и Павла</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- /Burger Menu -->
     <header>
         <div class="header__top">
             <div class="container">
@@ -37,7 +56,7 @@
     <section class="otdel__info">
         <div class="container">
             <div class="cards">
-                <div class="card">
+                <div class="card" id="kostel">
                     <h2>Костёл Вознесения Святого Креста</h2>
                     <p>Костёл Вознесения Святого Креста – католический храм с богатейшей историей, ведущей отсчёт с 1638 года. Нынешнее здание, расположенное на живописном берегу реки Березины по ул. Советской, 76а, является уже четвёртым храмом на этом месте.</p>
                     <h3>Архитектура:</h3>
@@ -52,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="preobrazhenie">
                     <h2>Храм Преображения Господня</h2>
                     <p>Храм Преображения Господня – православный собор, принадлежащий Светлогорскому благочинию Гомельской епархии. Это величественное сооружение, ставшее одним из духовных символов города.</p>
                     <h3>Архитектура:</h3>
@@ -77,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="kiril">
                     <h2>Храм во имя Кирилла Туровского</h2>
                     <p>Храм святителя Кирилла Туровского – православный храм в центральной части Светлогорска, ставший важным духовным и культурным центром города.</p>
                     <h3>Архитектура:</h3>
@@ -105,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="blagodat">
                     <h2>Церковь «Благодать»</h2>
                     <p>Церковь «Благодать» является протестантской общиной, принадлежащей к евангельскому движению Беларуси.</p>
                     <h3>Кто такие протестанты?</h3>
@@ -122,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="nikolay">
                     <h2>Храм Святого Николая Чудотворца</h2>
                     <p>Храм Святителя Николая Чудотворца – православный храм, расположенный в деревне Якимова Слобода Светлогорского района. Храм стал духовным центром для местных жителей и окрестных территорий.</p>
                     <h3>Архитектура:</h3>
@@ -142,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="dionisiy">
                     <h2>Часовня Дионисия Полоцкого</h2>
                     <p>Часовня Святого Дионисия Полоцкого – православная часовня, построенная в 2015 году в память о трагически погибшем друге мецената. Это место стало символом вечной памяти и христианской веры.</p>
                     <h3>Контакты:</h3>
@@ -161,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="apostol">
                     <h2>Церковь Двенадцати апостолов</h2>
                     <p>Храм Святых Двенадцати Апостолов – деревянный православный храм в агрогородке Чирковичи, являющийся образцом традиционного белорусского деревянного зодчества.</p>
                     <h3>Контакты:</h3>
@@ -180,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="newapostol">
                     <h2>Новоапостольская церковь</h2>
                     <p>Новоапостольская церковь – протестантская христианская община, основанная в 1863 году в Гамбурге и распространившаяся по всему миру. Возникла в ходе духовного пробуждения XIX века как движение, стремящееся восстановить первоапостольскую практику христианства.</p>
                     <h3>Контакты:</h3>
@@ -198,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="petropavel">
                     <h2>Церковь Петра и Павла</h2>
                     <p>Церковь святых Петра и Павла – православный храм, построенный и освященный в 1989 году. Его архитектура, выполненная в форме корабля, символизирует спасение и надежду.</p>
                     <h3>Контакты:</h3>
@@ -230,20 +249,58 @@
                 </div>
                 <div class="footer__contacts">
                     <h2>Контакты</h2>
-                    <div class="adr"><img src="img/png/adr.png" alt="adres"><p>247431, г. Светлогорск, ул. Азалова, 9А</p></div>
-                    <div class="tel"><img src="img/png/tel.png" alt="tel"><a href="tel:8(02342)23372">8 (02342) 23372</a></div>
-                    <div class="mail"><img src="img/png/mail.png" alt="mail"><a href="mailto:svetlshkola11@svetlshkola11.by">svetlshkola11@svetlshkola11.by</a></div>
+                    <div class="adr"><img class="noi" src="img/png/adr.png" alt="adres"><p>247431, г. Светлогорск, ул. Азалова, 9А</p></div>
+                    <div class="tel"><img class="noi" src="img/png/tel.png" alt="tel"><a href="tel:8(02342)23372">8 (02342) 23372</a></div>
+                    <div class="mail"><img class="noi" src="img/png/mail.png" alt="mail"><a href="mailto:svetlshkola11@svetlshkola11.by">svetlshkola11@svetlshkola11.by</a></div>
                 </div>
                 <div class="footer__social">
                     <h2>Наши соцсети</h2>
                     <ul>
-                        <li><a href="https://www.instagram.com/11.school.svetlogorsk?igsh=dHJlYXJiaGNkenFo"><img src="img/png/inst.png" alt="inst"></a></li>
-                        <li><a href="https://vk.com/svschool11"><img src="img/png/vk.png" alt="vk"></a></li>
-                        <li><a href="https://t.me/svetlscholl11"><img src="img/png/tg.png" alt="tg"></a></li>
+                        <li><a href="https://www.instagram.com/11.school.svetlogorsk?igsh=dHJlYXJiaGNkenFo"><img class="noi" src="img/png/inst.png" alt="inst"></a></li>
+                        <li><a href="https://vk.com/svschool11"><img class="noi" src="img/png/vk.png" alt="vk"></a></li>
+                        <li><a href="https://t.me/svetlscholl11"><img class="noi" src="img/png/tg.png" alt="tg"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Модальное окно для просмотра фото -->
+    <div id="modalImgViewer" class="modal-img-viewer">
+        <span id="modalClose" class="modal-close">&times;</span>
+        <img id="modalImg" class="modal-img" src="" alt="Фото">
+        <div class="modal-zoom-controls">
+            <button id="zoomIn" class="modal-zoom-btn">+</button>
+            <button id="zoomOut" class="modal-zoom-btn">-</button>
+        </div>
+    </div>
 </body>
+<script src="sсript.js"></script>
+<script>
+// Burger menu logic
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerIcon = document.getElementById('burgerIcon');
+    const burgerNav = document.getElementById('burgerNav');
+    const closeBurger = document.getElementById('closeBurger');
+    burgerIcon.addEventListener('click', function () {
+        burgerNav.classList.add('open');
+    });
+    closeBurger.addEventListener('click', function () {
+        burgerNav.classList.remove('open');
+    });
+    // Плавный скролл
+    document.querySelectorAll('.burger-nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.getBoundingClientRect().top + window.pageYOffset - 80,
+                    behavior: 'smooth'
+                });
+                burgerNav.classList.remove('open');
+            }
+        });
+    });
+});
+</script>
 </html>

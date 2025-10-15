@@ -15,6 +15,25 @@
     <title>Музеи</title>
 </head>
 <body>
+    <!-- Burger Menu -->
+    <div class="burger-menu" id="burgerMenu">
+        <span class="burger-icon" id="burgerIcon">&#9776;</span>
+        <nav class="burger-nav" id="burgerNav">
+            <span class="close-burger" id="closeBurger">&times;</span>
+            <ul>
+                <li><a href="#afgan">Памятник воинам-интернационалистам</a></li>
+                <li><a href="#kolokol">Памятник "Скорбящий колокол"</a></li>
+                <li><a href="#ola">Мемориальный комплекс «Ола»</a></li>
+                <li><a href="#roman">Памятник «Роман Шатила»</a></li>
+                <li><a href="#bratstvo">Памятный знак «Братство четырех флотов»</a></li>
+                <li><a href="#teplovoz">Монумент тепловозу ТГК-2</a></li>
+                <li><a href="#geroi">Аллея Героев Советского Союза</a></li>
+                <li><a href="#kurgan">Курган Славы</a></li>
+                <li><a href="#mill">Ветряная мельница</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- /Burger Menu -->
     <header>
         <div class="header__top">
             <div class="container">
@@ -37,7 +56,7 @@
     <section class="otdel__info">
         <div class="container">
             <div class="cards">
-                <div class="card">
+                <div class="card" id="afgan">
                     <h2>Памятник воинам-интернационалистам</h2>
                     <p>Памятник воинам-интернационалистам был открыт 2 июля 1994 года. Светлогорцы называют его «памятник воинам-афганцам».</p>
                     <div class="card__info">
@@ -49,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="kolokol">
                     <h2>Памятник "Скорбящий колокол"</h2>
                     <p>Памятник "Скорбящий колокол" - мемориал в честь воинов, павших за освобождение Светлогорского района в годы Великой Отечественной войны.
                         Он представляет собой 9-тонный бронзовый колокол, имеющий большой раскол, вызванный взрывом. С внутренней стороны колокола, куда можно пройти через этот раскол, выгравированы имена всех 264 погибших при освобождении Шатилок. Они захоронены в братской могиле под пятиметровым сооружением.</p>
@@ -62,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="ola">
                     <h2>Мемориальный комплекс «Ола»</h2>
                     <p>В результате реконструкции братского захоронения создан мемориальный комплекс «Ола», который включает три функциональные зоны: входную группу, мемориальную зону (на территории, примыкающей к существующему братскому захоронению) и соединяющий их пешеходный маршрут по бывшей деревенской улице.
                         В центре мемориальной зоны — символичный крест и колокол. Рядом — звонница в виде стилизованного деревенского сарая с количеством колоколов по числу деревень, жители которых здесь погибли.</p>
@@ -75,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="roman">
                     <h2>Памятник «Роман Шатила»</h2>
                     <p>Дань основателю местечка Шатилки (Шатилковичи), установлен в центре города, имеет высоту более двух метров. В руке помещика находится привилей 1560 года, выданный королем Речи Посполитой и Великого княжества Литовского Жигимонтом II Августом. На висящем на груди медальоне изображён современный герб Светлогорска.</p>
                     <div class="card__info">
@@ -87,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="bratstvo">
                     <h2>Памятный знак «Братство четырех флотов»</h2>
                     <p>Знак открыт в июле 2020 года на набережной Березины по инициативе ветеранской организации бывших военнослужащих ВМФ при поддержке районных властей, предприятий и организаций города.
                         На постаменте в центре композиции - два настоящих якоря, роза ветров, четыре бескозырки с названиями флотов и два флагштока. По обе стороны от якорей - таблички с указанием флотов, которые были в Советском Союзе: Балтийский, Черноморский, Тихоокеанский, Северный.</p>
@@ -100,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="teplovoz">
                     <h2>Монумент тепловозу ТГК-2</h2>
                     <p>Возле железнодорожного вокзала установлен памятный монумент маневровому тепловозу ТГК-2 производства Калужского машиностроительного завода.
                         Тепловоз для установки в качестве монумента предоставил ОАО «Светлогорский завод ЖБИиК». Данный тепловоз отработал на предприятии около 40 лет, где перевозил песок, щебень, цемент, вывозил за территорию до 10 вагонов готовой продукции в день.</p>
@@ -113,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="geroi">
                     <h2>Аллея Героев Советского Союза</h2>
                     <p>Находится по улице 50 лет Октября в центре города и представляет собой череду бронзовых бюстов Героев Советского Союза, погибших при освобождении Светлогорщины.
                         На ней размещено 9 бюстов воинов, уроженцев различных уголков бывшего Советского Союза – России, Украины, Грузии, Татарстана.</p>
@@ -126,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="kurgan">
                     <h2>Курган Славы</h2>
                     <p>Расположен между деревнями Судовица Паричского городского и Ракшин Чирковичского сельского Советов, вблизи автострады Паричи – Светлогорск. Памятник состоит из собственно земляного кургана и снятой с вооружения артиллерийской пушки производства СССР.</p>
                     <div class="card__info">
@@ -138,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="mill">
                     <h2>Ветряная мельница</h2>
                     <p>Деревянная ветряная мельница шатрового (голландского) типа с 2-мя жерновами. Представляет собой 8-мигранную усеченную пирамиду каркасной конструкции, стоящей на деревянном срубе со стороной 3,5 м. Основой конструкции является мощный столб – мотовило. На столб насажен круг-шестерня, который приводит в движение жернова. Мельница завершена 8-мигранным шатром, поворачивающимся вокруг вертикальной оси при помощи 2-х консолей. Накрыта граненой скатной крышей, до конька которой от уровня земли 15 м. Имеет 2 выхода (для выгрузки муки и загрузки зерна) и 4 крыла-маха. Общая высота – 27 м.Выполнена из дерева.</p>
                     <div class="card__info">
@@ -162,20 +181,58 @@
                 </div>
                 <div class="footer__contacts">
                     <h2>Контакты</h2>
-                    <div class="adr"><img src="img/png/adr.png" alt="adres"><p>247431, г. Светлогорск, ул. Азалова, 9А</p></div>
-                    <div class="tel"><img src="img/png/tel.png" alt="tel"><a href="tel:8(02342)23372">8 (02342) 23372</a></div>
-                    <div class="mail"><img src="img/png/mail.png" alt="mail"><a href="mailto:svetlshkola11@svetlshkola11.by">svetlshkola11@svetlshkola11.by</a></div>
+                    <div class="adr"><img class="noi" src="img/png/adr.png" alt="adres"><p>247431, г. Светлогорск, ул. Азалова, 9А</p></div>
+                    <div class="tel"><img class="noi" src="img/png/tel.png" alt="tel"><a href="tel:8(02342)23372">8 (02342) 23372</a></div>
+                    <div class="mail"><img class="noi" src="img/png/mail.png" alt="mail"><a href="mailto:svetlshkola11@svetlshkola11.by">svetlshkola11@svetlshkola11.by</a></div>
                 </div>
                 <div class="footer__social">
                     <h2>Наши соцсети</h2>
                     <ul>
-                        <li><a href="https://www.instagram.com/11.school.svetlogorsk?igsh=dHJlYXJiaGNkenFo"><img src="img/png/inst.png" alt="inst"></a></li>
-                        <li><a href="https://vk.com/svschool11"><img src="img/png/vk.png" alt="vk"></a></li>
-                        <li><a href="https://t.me/svetlscholl11"><img src="img/png/tg.png" alt="tg"></a></li>
+                        <li><a href="https://www.instagram.com/11.school.svetlogorsk?igsh=dHJlYXJiaGNkenFo"><img class="noi" src="img/png/inst.png" alt="inst"></a></li>
+                        <li><a href="https://vk.com/svschool11"><img class="noi" src="img/png/vk.png" alt="vk"></a></li>
+                        <li><a href="https://t.me/svetlscholl11"><img class="noi" src="img/png/tg.png" alt="tg"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Модальное окно для просмотра фото -->
+    <div id="modalImgViewer" class="modal-img-viewer">
+        <span id="modalClose" class="modal-close">&times;</span>
+        <img id="modalImg" class="modal-img" src="" alt="Фото">
+        <div class="modal-zoom-controls">
+            <button id="zoomIn" class="modal-zoom-btn">+</button>
+            <button id="zoomOut" class="modal-zoom-btn">-</button>
+        </div>
+    </div>
 </body>
+<script src="sсript.js"></script>
+<script>
+// Burger menu logic
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerIcon = document.getElementById('burgerIcon');
+    const burgerNav = document.getElementById('burgerNav');
+    const closeBurger = document.getElementById('closeBurger');
+    burgerIcon.addEventListener('click', function () {
+        burgerNav.classList.add('open');
+    });
+    closeBurger.addEventListener('click', function () {
+        burgerNav.classList.remove('open');
+    });
+    // Плавный скролл
+    document.querySelectorAll('.burger-nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.getBoundingClientRect().top + window.pageYOffset - 80,
+                    behavior: 'smooth'
+                });
+                burgerNav.classList.remove('open');
+            }
+        });
+    });
+});
+</script>
 </html>
