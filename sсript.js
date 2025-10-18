@@ -1,48 +1,63 @@
-// Modal image viewer logic
 document.addEventListener('DOMContentLoaded', function () {
-	const modal = document.getElementById('modalImgViewer');
-	const modalImg = document.getElementById('modalImg');
-	const modalClose = document.getElementById('modalClose');
-	const zoomInBtn = document.getElementById('zoomIn');
-	const zoomOutBtn = document.getElementById('zoomOut');
-	let scale = 1;
+    const burgerIcon = document.getElementById('burgerIcon');
+    const burgerNav = document.getElementById('burgerNav');
+    const closeBurger = document.getElementById('closeBurger');
+    burgerIcon.addEventListener('click', function () {
+        burgerNav.classList.add('open');
+    });
+    closeBurger.addEventListener('click', function () {
+        burgerNav.classList.remove('open');
+    });
 
-	// Открытие модального окна по клику на фото
-	// Открытие модального окна по клику на любое фото (кроме .noi)
-	document.querySelectorAll('img:not(.noi)').forEach(img => {
-		img.addEventListener('click', function () {
-			modal.classList.add('active');
-			modalImg.src = img.src;
-			modalImg.style.transform = 'scale(1)';
-			scale = 1;
-		});
-	});
+    document.addEventListener('click', function (e) {
+        if (!burgerNav || !burgerIcon) return;
 
-	// Закрытие по крестику
-	modalClose.addEventListener('click', function () {
-		modal.classList.remove('active');
-		modalImg.src = '';
-	});
+        if (!burgerNav.classList.contains('open')) return;
 
-	// Зум
-	zoomInBtn.addEventListener('click', function () {
-		scale = Math.min(scale + 0.2, 4);
-		modalImg.style.transform = `scale(${scale})`;
-	});
-	zoomOutBtn.addEventListener('click', function () {
-		scale = Math.max(scale - 0.2, 0.5);
-		modalImg.style.transform = `scale(${scale})`;
-	});
+        const clickedInsideNav = e.target.closest('#burgerNav');
+        const clickedBurgerIcon = e.target.closest('#burgerIcon');
+        if (!clickedInsideNav && !clickedBurgerIcon) {
+            burgerNav.classList.remove('open');
+        }
+    });
 
-	// Закрытие по клику вне картинки
-	modal.addEventListener('click', function (e) {
-		if (e.target === modal) {
-			modal.classList.remove('active');
-			modalImg.src = '';
-		}
-	});
+    document.querySelectorAll('.burger-nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.getBoundingClientRect().top + window.pageYOffset - 80,
+                    behavior: 'smooth'
+                });
+                burgerNav.classList.remove('open');
+            }
+        });
+    });
 });
-// Slider logic
+
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerIcon540 = document.querySelector('.burger-icon540');
+    const burgerNav540 = document.querySelector('.burger-nav540');
+    const closeBurger540 = document.querySelector('.close-burger540');
+
+    if (burgerIcon540 && burgerNav540 && closeBurger540) {
+        burgerIcon540.addEventListener('click', function() {
+            burgerNav540.classList.add('open');
+        });
+
+        closeBurger540.addEventListener('click', function() {
+            burgerNav540.classList.remove('open');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!burgerNav540.contains(e.target) && !burgerIcon540.contains(e.target)) {
+                burgerNav540.classList.remove('open');
+            }
+        });
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
 	const slides = document.querySelectorAll('.slide');
 	const prevBtn = document.querySelector('.slider-btn.prev');
@@ -66,17 +81,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 });
-// Tabs logic
+
 document.addEventListener('DOMContentLoaded', function () {
 	const tabButtons = document.querySelectorAll('.tab-btn');
 	const tabContents = document.querySelectorAll('.tab-content');
 
 	tabButtons.forEach(btn => {
 		btn.addEventListener('click', function () {
-			// Remove active from all
 			tabButtons.forEach(b => b.classList.remove('active'));
 			tabContents.forEach(tc => tc.classList.remove('active'));
-			// Add active to current
 			btn.classList.add('active');
 			const tabId = btn.getAttribute('data-tab');
 			document.getElementById(tabId).classList.add('active');
