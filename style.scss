@@ -470,8 +470,9 @@ footer .footer {
     .put {
       margin-bottom: 18px;
       .map_s{
+        width: 94vw !important;
         iframe{
-          width: 77vh !important;
+          width: 94vw !important;
           height: 340px;
         }
       }
@@ -517,16 +518,16 @@ footer .footer {
       flex-direction: column;
       
       .card__photo img {
-        width: 77vh !important;
+        width: 94vw !important;
         height: 380px !important;
       }
       
       .card__map {
         .cr__map{
-          width: 77vh !important;
+          width: 94vw !important;
             height: 380px;
           iframe{
-            width: 77vh !important;
+            width: 94vw !important;
             height: 380px;
           }
         }
