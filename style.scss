@@ -417,7 +417,6 @@ footer .footer {
   .video-wrapper iframe {
     height: 240px;
   }
-    
   .video-section {
     padding: 14px 0;
   }
@@ -440,8 +439,7 @@ footer .footer {
           text-align: center;
         }
       }
-    }
-
+  }
     .slide-photos {
     grid-template-columns: 1fr;
     width: 100% !important;
@@ -512,6 +510,9 @@ footer .footer {
     }
     p {
       font-size: 18px;
+    }
+    a{
+      max-width: 94vw;
     }
     
     .card__info {

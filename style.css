@@ -727,6 +727,9 @@ footer .footer .footer__social ul li:last-child {
   .otdel__info .cards .card p {
     font-size: 18px;
   }
+  .otdel__info .cards .card a {
+    max-width: 94vw;
+  }
   .otdel__info .cards .card .card__info {
     flex-direction: column;
   }
