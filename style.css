@@ -676,11 +676,12 @@ footer .footer .footer__social ul li:last-child {
     bottom: 6px;
   }
   .slide img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
   .slide-photos img {
-    height: 180px;
+    justify-self: center;
+    height: 250px;
   }
   .information h2 {
     font-size: 32px;
@@ -783,19 +784,20 @@ footer .footer .footer__social ul li:last-child {
   .burger-menu540 {
     position: fixed;
     top: 12px;
-    right: 12px;
+    right: 16px;
     z-index: 3200;
     display: block;
   }
   .burger-icon540 {
+    font-family: "Oswald", sans-serif;
     display: inline-block;
     cursor: pointer;
     background: antiquewhite;
-    color: #111;
-    font-size: 15px;
+    color: black;
+    font-size: 16px;
     font-weight: 600;
     text-transform: none;
-    padding: 8px 14px;
+    padding: 10px 16px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: background 0.18s, transform 0.12s;
@@ -829,7 +831,6 @@ footer .footer .footer__social ul li:last-child {
   }
   .burger-nav540 ul {
     margin: 0;
-    padding: 12px 8px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -842,13 +843,12 @@ footer .footer .footer__social ul li:last-child {
   .burger-nav540 ul li a {
     display: block;
     padding: 12px 18px;
-    color: #111;
-    text-decoration: none;
+    color: black;
     font-size: 18px;
     border-radius: 8px;
     transition: background 0.15s, color 0.15s;
   }
-  .burger-nav ul li a:hover {
+  .burger-nav540 ul li a:hover {
     background: rgba(0, 136, 255, 0.8);
     color: rgba(255, 255, 255, 0.95);
   }
@@ -863,6 +863,6 @@ footer .footer .footer__social ul li:last-child {
     background: transparent;
     border: none;
     padding: 6px;
-    z-index: 3350;
+    z-index: 3000;
   }
 }/*# sourceMappingURL=style.css.map */
