@@ -691,7 +691,7 @@ footer .footer .footer__social ul li:last-child {
     margin-bottom: 18px;
   }
   .information .put .map_s iframe {
-    width: 508px;
+    width: 77vh !important;
     height: 340px;
   }
   footer .footer {
@@ -728,15 +728,15 @@ footer .footer .footer__social ul li:last-child {
     flex-direction: column;
   }
   .otdel__info .cards .card .card__info .card__photo img {
-    width: 508px !important;
+    width: 77vh !important;
     height: 380px !important;
   }
   .otdel__info .cards .card .card__info .card__map .cr__map {
-    width: 508px;
+    width: 77vh !important;
     height: 380px;
   }
   .otdel__info .cards .card .card__info .card__map .cr__map iframe {
-    width: 508px;
+    width: 77vh !important;
     height: 380px;
   }
   .container {
