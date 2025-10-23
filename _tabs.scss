@@ -154,10 +154,10 @@
             gap: 10px;
             
             img {
-                width: 100%;
-                max-width: 300px;
+                width: 90vw;
+                max-width: 90vw;
                 height: auto;
-                max-height: 120px;
+                max-height: 15vh;
                 object-fit: contain;
             }
         }
@@ -168,10 +168,10 @@
             gap: 10px;
             
             img {
-                width: 100%;
-                max-width: 200px;
+                width: 60vw;
+                max-width: 60vw;
                 height: auto;
-                max-height: 120px;
+                max-height: 15vh;
                 object-fit: contain;
             }
         }
@@ -183,13 +183,34 @@
         padding: 16px 12px;
         
         .flag img {
-            max-width: 280px;
-            max-height: 100px;
+            width: 85vw;
+            max-width: 85vw;
+            max-height: 12vh;
         }
         
         .gerb img {
-            max-width: 180px;
-            max-height: 100px;
+            width: 50vw;
+            max-width: 50vw;
+            max-height: 12vh;
+        }
+    }
+}
+
+// Специально для iPhone и других мобильных устройств
+@media (max-width: 430px) {
+    .tab-content {
+        padding: 12px 8px;
+        
+        .flag img {
+            width: 80vw;
+            max-width: 80vw;
+            max-height: 10vh;
+        }
+        
+        .gerb img {
+            width: 45vw;
+            max-width: 45vw;
+            max-height: 10vh;
         }
     }
 }
