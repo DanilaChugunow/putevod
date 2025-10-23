@@ -372,7 +372,7 @@ button {
 }
 .tab-content .gerb {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
   margin: 20px 0;
 }
@@ -383,6 +383,7 @@ button {
   margin-bottom: 10px;
   border-radius: 10px;
   transition: all 0.3s ease;
+  align-self: center;
 }
 .tab-content .gerb img:hover {
   transform: scale(1.05);
@@ -390,7 +391,6 @@ button {
 .tab-content .flag {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
   margin: 20px 0;
 }
@@ -401,6 +401,7 @@ button {
   margin-bottom: 10px;
   border-radius: 10px;
   transition: all 0.3s ease;
+  align-self: center;
 }
 .tab-content .flag img:hover {
   transform: scale(1.05);
@@ -411,7 +412,6 @@ button {
     padding: 20px 16px;
   }
   .tab-content .flag {
-    text-align: center;
     gap: 15px;
   }
   .tab-content .flag img {
@@ -424,7 +424,6 @@ button {
   }
   .tab-content .gerb {
     flex-direction: column;
-    text-align: center;
     gap: 10px;
   }
   .tab-content .gerb img {
