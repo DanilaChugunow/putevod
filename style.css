@@ -383,16 +383,15 @@ button {
   margin-bottom: 10px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .tab-content .gerb img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 .tab-content .flag {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   margin: 20px 0;
 }
 .tab-content .flag img {
@@ -402,13 +401,71 @@ button {
   margin-bottom: 10px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .tab-content .flag img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+  .tab-content {
+    padding: 20px 16px;
+  }
+  .tab-content .flag {
+    text-align: center;
+    gap: 15px;
+  }
+  .tab-content .flag img {
+    width: 90vw;
+    max-width: 90vw;
+    height: auto;
+    max-height: 15vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .tab-content .gerb {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .tab-content .gerb img {
+    width: 60vw;
+    max-width: 60vw;
+    height: auto;
+    max-height: 15vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 540px) {
+  .tab-content {
+    padding: 16px 12px;
+  }
+  .tab-content .flag img {
+    width: 85vw;
+    max-width: 85vw;
+    max-height: 12vh;
+  }
+  .tab-content .gerb img {
+    width: 50vw;
+    max-width: 50vw;
+    max-height: 12vh;
+  }
+}
+@media (max-width: 430px) {
+  .tab-content {
+    padding: 12px 8px;
+  }
+  .tab-content .flag img {
+    width: 80vw;
+    max-width: 80vw;
+    max-height: 10vh;
+  }
+  .tab-content .gerb img {
+    width: 45vw;
+    max-width: 45vw;
+    max-height: 10vh;
+  }
+}
 .tab-content.active {
   display: block;
   opacity: 1;
