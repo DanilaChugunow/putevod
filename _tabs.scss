@@ -143,6 +143,57 @@
     }
 }
 
+// Адаптивные стили для мобильных устройств
+@media (max-width: 768px) {
+    .tab-content {
+        padding: 20px 16px;
+        
+        .flag {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            
+            img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                max-height: 120px;
+                object-fit: contain;
+            }
+        }
+        
+        .gerb {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            
+            img {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                max-height: 120px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .tab-content {
+        padding: 16px 12px;
+        
+        .flag img {
+            max-width: 280px;
+            max-height: 100px;
+        }
+        
+        .gerb img {
+            max-width: 180px;
+            max-height: 100px;
+        }
+    }
+}
+
 .tab-content.active {
     display: block;
     opacity: 1;
