@@ -1307,10 +1307,7 @@ footer .footer .footer__social ul li:last-child {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 136, 255, 0.05));
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: antiquewhite;
   }
   .slides {
     position: relative;
