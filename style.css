@@ -1164,9 +1164,14 @@ footer .footer .footer__social ul li:last-child {
   margin: 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   animation: scaleIn 0.8s ease-out 0.8s both;
+}
+.video-wrapper p {
+  font-size: 18px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  text-align: center;
 }
 .video-wrapper:hover {
   transform: translateY(-5px);
@@ -1558,6 +1563,11 @@ footer .footer .footer__social ul li:last-child {
 @media (max-width: 540px) {
   .video-wrapper iframe {
     height: 240px;
+  }
+  .video-wrapper p {
+    font-size: 14px;
+    margin-top: 8px;
+    padding-bottom: 6px;
   }
   .video-section {
     padding: 14px 0;
