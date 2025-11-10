@@ -2169,7 +2169,7 @@ footer {
         position: absolute;
         top: 50%;
         left: -10%;
-        width: 120%;
+        width: 100%;
         height: 2px;
         background: linear-gradient(90deg, 
             transparent, 
@@ -3148,5 +3148,6 @@ footer .footer {
             transform: scale(1);
         }
     }
+    
 }
 
