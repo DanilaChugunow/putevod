@@ -1,9 +1,12 @@
 .burger-menu {
     position: fixed;
-    top: 20px;
+    top: 13px;
     left: 20px;
     z-index: 2000;
     animation: fadeInLeft 0.8s ease-out;
+}
+.scrrolled{
+    top: 7px;
 }
 .burger-icon {
     font-size: 38px;

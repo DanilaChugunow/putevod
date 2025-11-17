@@ -348,6 +348,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    const bgmenu = document.querySelector('.burger-menu');
+    
+    if (bgmenu) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                bgmenu.classList.add('scrrolled');
+            } else {
+                bgmenu.classList.remove('scrrolled');
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const headerBottom = document.querySelector('.header__bottom');
     
     if (headerBottom) {
