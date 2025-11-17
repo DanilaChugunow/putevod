@@ -2359,8 +2359,8 @@ footer {
 
 .slider-controls {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 16px;
+    left: 0;
     transform: translateX(-50%);
     display: flex;
     gap: 15px;
@@ -2804,7 +2804,7 @@ footer {
     margin-bottom: 0;
 }
 .slider-controls {
-    bottom: 6px;
+    bottom: 8px;
 }
 .slide img {
     max-width: 80%;

@@ -2471,8 +2471,8 @@ footer .footer .footer__social ul li:last-child {
   }
   .slider-controls {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 16px;
+    left: 0;
     transform: translateX(-50%);
     display: flex;
     gap: 15px;
@@ -2832,7 +2832,7 @@ footer .footer .footer__social ul li:last-child {
     margin-bottom: 0;
   }
   .slider-controls {
-    bottom: 6px;
+    bottom: 8px;
   }
   .slide img {
     max-width: 80%;
