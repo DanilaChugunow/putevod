@@ -58,29 +58,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-	const slides = document.querySelectorAll('.slide');
-	const prevBtn = document.querySelector('.slider-btn.prev');
-	const nextBtn = document.querySelector('.slider-btn.next');
-	let current = 0;
+// document.addEventListener('DOMContentLoaded', function () {
+// 	const slides = document.querySelectorAll('.slide');
+// 	const prevBtn = document.querySelector('.slider-btn.prev');
+// 	const nextBtn = document.querySelector('.slider-btn.next');
+// 	let current = 0;
 
-	function showSlide(idx) {
-		slides.forEach((slide, i) => {
-			slide.classList.toggle('active', i === idx);
-		});
-	}
+// 	function showSlide(idx) {
+// 		slides.forEach((slide, i) => {
+// 			slide.classList.toggle('active', i === idx);
+// 		});
+// 	}
 
-	if (prevBtn && nextBtn) {
-		prevBtn.addEventListener('click', function () {
-			current = (current - 1 + slides.length) % slides.length;
-			showSlide(current);
-		});
-		nextBtn.addEventListener('click', function () {
-			current = (current + 1) % slides.length;
-			showSlide(current);
-		});
-	}
-});
+// 	if (prevBtn && nextBtn) {
+// 		prevBtn.addEventListener('click', function () {
+// 			current = (current - 1 + slides.length) % slides.length;
+// 			showSlide(current);
+// 		});
+// 		nextBtn.addEventListener('click', function () {
+// 			current = (current + 1) % slides.length;
+// 			showSlide(current);
+// 		});
+// 	}
+// });
 
 document.addEventListener('DOMContentLoaded', function () {
 	const tabButtons = document.querySelectorAll('.tab-btn');
